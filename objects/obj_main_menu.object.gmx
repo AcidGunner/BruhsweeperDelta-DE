@@ -35,6 +35,7 @@ instance_create(320,0,obj_menu_adventure);
 instance_create(0,-240,obj_menu_adventure_settings);
 instance_create(-320,0,obj_menu_freeplay);
 
+_audio=0;
 select=0;
 temp_x=0;
 type=0;
@@ -165,14 +166,10 @@ room_goto(rm_vs_game);
 var t_menu_music = 12+menu_music;
 var p_menu_music = 12+prev_music;
 var _snd = 0;
-if instance_exists(obj_audio_loop_sound)
-{
-    _snd = audio_sound_get_track_position(obj_audio_loop_sound._audio);
-    instance_destroy(obj_audio_loop_sound);
-};
+if _audio!=0 _snd = audio_sound_get_track_position(_audio);
 audio_stop_sound(global._music[p_menu_music]);
-audio_loop_sound(global._music[t_menu_music],global._st[13],global._en[13],44100,0);
-if _snd!=0 audio_sound_set_track_position(obj_audio_loop_sound._audio,_snd);
+_audio = audio_play_sound(global._music[t_menu_music],0,true);
+if _snd!=0 audio_sound_set_track_position(_audio,_snd);
 prev_music = menu_music;
 </string>
           </argument>

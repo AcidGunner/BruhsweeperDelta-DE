@@ -9,113 +9,46 @@
   </NewExtensions>
   <sounds name="sound">
     <sounds name="music">
-      <sounds name="menu">
-        <sounds name="menu_1">
-          <sound>sound\mus_menu_1r</sound>
-          <sound>sound\mus_menu_1</sound>
+      <sounds name="bsdde_additions">
+        <sounds name="more_bgm">
+          <sound>sound\mus_stage4_1</sound>
         </sounds>
-        <sounds name="menu_2">
-          <sound>sound\mus_menu_2</sound>
-          <sound>sound\mus_menu_2r</sound>
-        </sounds>
-        <sounds name="menu_3">
-          <sound>sound\mus_menu_3</sound>
-          <sound>sound\mus_menu_3r</sound>
-        </sounds>
-        <sounds name="menu_4">
-          <sound>sound\mus_menu_4</sound>
-          <sound>sound\mus_menu_4r</sound>
-        </sounds>
-        <sounds name="menu_5">
-          <sound>sound\mus_menu_5</sound>
-        </sounds>
-        <sounds name="menu_6">
-          <sound>sound\mus_menu_6</sound>
-          <sound>sound\mus_menu_6r</sound>
-        </sounds>
-        <sounds name="menu_7">
-          <sound>sound\mus_menu_7</sound>
-          <sound>sound\mus_menu_7r</sound>
-        </sounds>
-        <sounds name="menu_8">
-          <sound>sound\mus_menu_8</sound>
-          <sound>sound\mus_menu_8r</sound>
-        </sounds>
-        <sounds name="menu_9">
-          <sound>sound\mus_menu_9</sound>
-          <sound>sound\mus_menu_9r</sound>
-        </sounds>
-        <sounds name="menu_10">
-          <sound>sound\mus_menu_10</sound>
-          <sound>sound\mus_menu_10r</sound>
+        <sounds name="other">
+          <sound>sound\mus_disligmer</sound>
         </sounds>
       </sounds>
+      <sounds name="menu">
+        <sound>sound\mus_menu_1</sound>
+        <sound>sound\mus_menu_2</sound>
+        <sound>sound\mus_menu_3</sound>
+        <sound>sound\mus_menu_4</sound>
+        <sound>sound\mus_menu_5</sound>
+        <sound>sound\mus_menu_6</sound>
+        <sound>sound\mus_menu_7</sound>
+        <sound>sound\mus_menu_8</sound>
+        <sound>sound\mus_menu_9</sound>
+        <sound>sound\mus_menu_10</sound>
+      </sounds>
       <sounds name="chapter1">
-        <sounds name="mus_stage1">
-          <sound>sound\mus_stage1</sound>
-          <sound>sound\mus_stage1r</sound>
-        </sounds>
-        <sounds name="mus_stage1_win">
-          <sound>sound\mus_stage1_win</sound>
-          <sound>sound\mus_stage1r_win</sound>
-        </sounds>
-        <sounds name="mus_stage2">
-          <sound>sound\mus_stage2</sound>
-          <sound>sound\mus_stage2r</sound>
-        </sounds>
-        <sounds name="mus_stage2_win">
-          <sound>sound\mus_stage2_win</sound>
-          <sound>sound\mus_stage2r_win</sound>
-        </sounds>
-        <sounds name="mus_stage3">
-          <sound>sound\mus_stage3</sound>
-          <sound>sound\mus_stage3r</sound>
-        </sounds>
-        <sounds name="mus_stage3_win">
-          <sound>sound\mus_stage3_win</sound>
-          <sound>sound\mus_stage3r_win</sound>
-        </sounds>
-        <sounds name="mus_stage4">
-          <sound>sound\mus_stage4</sound>
-          <sound>sound\mus_stage4r</sound>
-        </sounds>
-        <sounds name="mus_stage4_win">
-          <sound>sound\mus_stage4_win</sound>
-          <sound>sound\mus_stage4r_win</sound>
-        </sounds>
+        <sound>sound\mus_stage1</sound>
+        <sound>sound\mus_stage1_win</sound>
+        <sound>sound\mus_stage2</sound>
+        <sound>sound\mus_stage2_win</sound>
+        <sound>sound\mus_stage3</sound>
+        <sound>sound\mus_stage3_win</sound>
+        <sound>sound\mus_stage4</sound>
+        <sound>sound\mus_stage4_win</sound>
         <sound>sound\mus_ocean</sound>
       </sounds>
       <sounds name="chapter2">
-        <sounds name="mus_stage5">
-          <sound>sound\mus_stage5</sound>
-        </sounds>
-        <sounds name="mus_stage5_win">
-          <sound>sound\mus_stage5_win</sound>
-        </sounds>
-        <sounds name="mus_stage6">
-          <sound>sound\mus_stage6</sound>
-          <sound>sound\mus_stage6r</sound>
-        </sounds>
-        <sounds name="mus_stage6_win">
-          <sound>sound\mus_stage6_win</sound>
-          <sound>sound\mus_stage6r_win</sound>
-        </sounds>
-        <sounds name="mus_stage7">
-          <sound>sound\mus_stage7</sound>
-          <sound>sound\mus_stage7r</sound>
-        </sounds>
-        <sounds name="mus_stage7_win">
-          <sound>sound\mus_stage7_win</sound>
-          <sound>sound\mus_stage7r_win</sound>
-        </sounds>
-        <sounds name="mus_stage8">
-          <sound>sound\mus_stage8</sound>
-          <sound>sound\mus_stage8r</sound>
-        </sounds>
-        <sounds name="mus_stage8_win">
-          <sound>sound\mus_stage8_win</sound>
-          <sound>sound\mus_stage8r_win</sound>
-        </sounds>
+        <sound>sound\mus_stage5</sound>
+        <sound>sound\mus_stage5_win</sound>
+        <sound>sound\mus_stage6</sound>
+        <sound>sound\mus_stage6_win</sound>
+        <sound>sound\mus_stage7</sound>
+        <sound>sound\mus_stage7_win</sound>
+        <sound>sound\mus_stage8</sound>
+        <sound>sound\mus_stage8_win</sound>
       </sounds>
       <sounds name="bosses">
         <sounds name="boss9">
@@ -129,11 +62,6 @@
             <sound>sound\mus_stage99</sound>
             <sound>sound\mus_stage99_win</sound>
           </sounds>
-          <sounds name="mus_stage9r">
-            <sound>sound\mus_stage9r_prepare</sound>
-            <sound>sound\mus_stage9r</sound>
-            <sound>sound\mus_stage9r_win</sound>
-          </sounds>
         </sounds>
         <sounds name="boss10">
           <sounds name="mus_stage10">
@@ -145,11 +73,6 @@
             <sound>sound\mus_stage100_prepare</sound>
             <sound>sound\mus_stage100</sound>
             <sound>sound\mus_stage100_win</sound>
-          </sounds>
-          <sounds name="mus_stage10r">
-            <sound>sound\mus_stage10r_prepare</sound>
-            <sound>sound\mus_stage10r</sound>
-            <sound>sound\mus_stage10r_win</sound>
           </sounds>
         </sounds>
         <sounds name="boss10-0">
@@ -197,52 +120,18 @@
         <sound>sound\mus_sweeping2</sound>
       </sounds>
       <sounds name="map">
-        <sounds name="map1">
-          <sound>sound\mus_map1</sound>
-          <sound>sound\mus_map1r</sound>
-        </sounds>
-        <sounds name="map2">
-          <sound>sound\mus_map2</sound>
-          <sound>sound\mus_map2r</sound>
-        </sounds>
-        <sounds name="map3">
-          <sound>sound\mus_map3</sound>
-          <sound>sound\mus_map3r</sound>
-        </sounds>
-        <sounds name="map4">
-          <sound>sound\mus_map4</sound>
-          <sound>sound\mus_map4t</sound>
-        </sounds>
-        <sounds name="map5">
-          <sound>sound\mus_map5</sound>
-        </sounds>
-        <sounds name="map6">
-          <sound>sound\mus_map_6</sound>
-          <sound>sound\mus_map_6r</sound>
-        </sounds>
-        <sounds name="map7">
-          <sound>sound\mus_map7</sound>
-          <sound>sound\mus_map7r</sound>
-        </sounds>
-        <sounds name="map8">
-          <sound>sound\mus_map8</sound>
-          <sound>sound\mus_map8r</sound>
-        </sounds>
-        <sounds name="map9">
-          <sound>sound\mus_map9</sound>
-        </sounds>
-        <sounds name="map99">
-          <sound>sound\mus_map99</sound>
-        </sounds>
-        <sounds name="map10">
-          <sound>sound\mus_map10</sound>
-        </sounds>
-        <sounds name="map100">
-          <sound>sound\mus_map100</sound>
-        </sounds>
-        <sounds name="map11">
-          <sound>sound\mus_map11</sound>
-        </sounds>
+        <sound>sound\mus_map1</sound>
+        <sound>sound\mus_map2</sound>
+        <sound>sound\mus_map3</sound>
+        <sound>sound\mus_map4</sound>
+        <sound>sound\mus_map5</sound>
+        <sound>sound\mus_map_6</sound>
+        <sound>sound\mus_map7</sound>
+        <sound>sound\mus_map8</sound>
+        <sound>sound\mus_map9</sound>
+        <sound>sound\mus_map99</sound>
+        <sound>sound\mus_map10</sound>
+        <sound>sound\mus_map100</sound>
       </sounds>
       <sound>sound\mus_title</sound>
       <sound>sound\mus_end</sound>
@@ -562,7 +451,6 @@
       <script>scripts\shape_setup.gml</script>
       <script>scripts\ver_show.gml</script>
     </scripts>
-    <script>scripts\temp_script.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_main</font>

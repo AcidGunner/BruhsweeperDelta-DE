@@ -397,6 +397,11 @@ else if fall=1
     y+=yspd;
 }
 
+//window_set_position(896,282);
+//window_set_position((x/320*896),(y/240*282));
+//view_xview[0]=lerp(view_xview[0],x-160,0.002);
+//view_yview[0]=lerp(view_yview[0],y-145,0.002);
+
 if active
 {
     //The mechanics i guess?

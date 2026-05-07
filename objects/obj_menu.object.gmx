@@ -40,7 +40,7 @@ list[5]=global.str[8];
 list[6]=global.str[9];
 
 menu_x = 160;
-menu_y = 120;
+menu_y = 140;
 menu_width = 200;
 menu_height = 100;
 </string>
@@ -165,7 +165,7 @@ repeat image_number
 }
 
 ds_priority_destroy(pr);
-draw_text(160,160+y,list[item]);
+draw_text(160,180+y,list[item]);
 </string>
           </argument>
         </arguments>
