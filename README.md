@@ -5,3 +5,7 @@
 
 PLEASE BE AWARED, THAT THIS MOD CONTENTS _**SHOULD NOT BE TAKEN SERIOUSLY**_!! JUST HAVE FUN!!!!\
 WORK IN PROGRESS!!!!
+
+<a href="https://github.com/AcidGunner/AcidPS3Data">
+	<img src="https://img.shields.io/badge/Powered%20By-AcidPS3%20Store-blue?logo=playstation3" />
+</a>
