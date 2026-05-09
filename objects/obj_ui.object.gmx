@@ -94,7 +94,7 @@ switch global.stage
     {
         global.stage++;
         if global.stage==10 ask_10();
-        ini_open("msplus-ps3-save.ini");
+        ini_open("bsdde-save.ini");
         ini_write_string("save","current_time",ds_list_write(obj_chap1_data.time));
         ini_close();
         if global.gamemode==1 lives=3;
@@ -104,7 +104,7 @@ switch global.stage
         else
         {
             global.stage=1;
-            ini_open("msplus-ps3-save.ini");
+            ini_open("bsdde-save.ini");
             ini_write_string("save","current_time","");
             ini_close();
             lives=3;

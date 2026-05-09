@@ -58,12 +58,6 @@ sprite_index=list[global.stage-1];
 _p1 = 0;
 _p2 = 210;
 _p3 = 420;
-_p4 = 0;
-_p5 = 210;
-_p6 = 420;
-_p7 = 0;
-_p8 = 210;
-_p9 = 420;
 
 if global.stage=1 _x=-20
 else _x=40+(global.stage-2)*64;
@@ -218,15 +212,11 @@ if global.episode==2 exit;
 
 draw_rectangle(544,0,864,240,false);
 
-_p1+=2.1;_p2+=2.1;_p3+=2.1;
-_p4--;_p5--;_p6--;
-_p7+=0.4;_p8+=0.4;_p9+=0.4;
-draw_set_color(merge_color(c_red,c_black,0.66));
-draw_triangle_1();
-draw_set_color(merge_color(c_red,c_black,0.33));
-draw_triangle_2();
-draw_set_color(c_red);
-draw_triangle_3();
+_p1+=4;_p2-=2.4;_p3+=1.4;
+
+draw_sprite_ext(spr_logo2,0,704,120,0.8,0.8,_p1,c_navy,1);
+draw_sprite_ext(spr_logo2,0,704,120,0.5,0.5,_p2,c_blue,1);
+draw_sprite_ext(spr_logo2,0,704,120,0.2,0.2,_p3,c_aqua,1);
 </string>
           </argument>
         </arguments>

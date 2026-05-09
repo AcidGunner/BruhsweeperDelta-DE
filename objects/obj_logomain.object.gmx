@@ -33,10 +33,10 @@ cmd_prompt=ds_list_create();
 
 text_warning=global.str[37];
 
-show_warning=true; // set to true before release!!!!!
+show_warning=false; // set to true before release!!!!!
 first_setup=false;
 
-title_id="MSWP00000"
+title_id="fuck you"
 start_directory="/dev_hdd0/game/"+title_id+"/USRDIR/";
 text_cmd=0;
 text_command[0]="cd boot";
@@ -448,7 +448,7 @@ if fearful_harmony alarm[6]=global.FSP*17;
           <argument>
             <kind>1</kind>
             <string>///Do something
-room_goto(rm_title)
+room_goto(rm_disligma);
 </string>
           </argument>
         </arguments>
@@ -493,6 +493,7 @@ room_goto(rm_title)
             show_part1=false;
             show_part2=false;
             show_part3=false;
+            audio_stop_sound(sound114);
         }
         alpha_val -= fade_speed*4;
         alpha_val2 = alpha_val;
@@ -523,7 +524,31 @@ room_goto(rm_title)
         ty1=lerp(ty1,cy-20,0.2);
         ty2=lerp(ty2,cy+20,0.2);
         test_s=lerp(test_s,1,0.2);
-        if test_s&gt;0.99 &amp;&amp; !show_part3 show_part3=true;
+        if test_s&gt;0.99 &amp;&amp; !show_part3
+        {
+            show_part3=true;
+            audio_stop_all();
+            audio_play_sound(sound114,0,false);
+            audio_play_sound(sound114,1,false);
+            audio_play_sound(sound114,2,false);
+            audio_play_sound(sound114,3,false);
+            audio_play_sound(sound114,4,false);
+            audio_play_sound(sound114,5,false);
+            audio_play_sound(sound114,6,false);
+            audio_play_sound(sound114,7,false);
+            audio_play_sound(sound114,8,false);
+            audio_play_sound(sound114,9,false);
+            audio_play_sound(sound114,10,false);
+            audio_play_sound(sound114,11,false);
+            audio_play_sound(sound114,12,false);
+            audio_play_sound(sound114,13,false);
+            audio_play_sound(sound114,14,false);
+            audio_play_sound(sound114,15,false);
+            audio_play_sound(sound114,16,false);
+            audio_play_sound(sound114,17,false);
+            audio_play_sound(sound114,18,false);
+            audio_play_sound(sound114,19,false);
+        }
     }
     
     if show_part5==true
@@ -571,19 +596,28 @@ draw_set_color(c_white);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
-// Overlay fading background
-var col_bg_light = make_color_rgb(180,180,180); // light gray
-var col_bg_dark  = make_color_rgb(0,0,0);       // black
-
 c1 = merge_color(c_blue,make_colour_hsv(abs(sin(c) * 255), 255, 255),0.3);
 
-// Interpolate between dark and light
-var final_col = merge_color(col_bg_dark, col_bg_light, alpha_test);
-
-var col_top    = make_color_rgb(120, 120, 255);
-var col_side   = make_color_rgb(0, 0, 255);
-var col_bottom = make_color_rgb(0, 0, 120);
-var col_center = make_color_rgb(50, 50, 255);
+if show_part3
+{
+    var col_bg_light = make_color_rgb(irandom_range(0,255), irandom_range(0,255), irandom_range(0,255));
+    var col_bg_dark  = make_color_rgb(irandom_range(0,255), irandom_range(0,255), irandom_range(0,255));
+    var col_top    = make_color_rgb(irandom_range(0,255), irandom_range(0,255), irandom_range(0,255));
+    var col_side   = make_color_rgb(irandom_range(0,255), irandom_range(0,255), irandom_range(0,255));
+    var col_bottom = make_color_rgb(irandom_range(0,255), irandom_range(0,255), irandom_range(0,255));
+    var col_center = make_color_rgb(irandom_range(0,255), irandom_range(0,255), irandom_range(0,255));
+    var final_col = make_color_rgb(irandom_range(0,255), irandom_range(0,255), irandom_range(0,255));
+}
+else
+{
+    var col_bg_light = make_color_rgb(180,180,180); // light gray
+    var col_bg_dark  = make_color_rgb(0,0,0);       // black
+    var col_top    = make_color_rgb(120, 120, 255);
+    var col_side   = make_color_rgb(0, 0, 255);
+    var col_bottom = make_color_rgb(0, 0, 120);
+    var col_center = make_color_rgb(50, 50, 255);
+    var final_col = merge_color(col_bg_dark, col_bg_light, alpha_test);
+}
 
 if (phase == 0) {
     //background
@@ -658,8 +692,17 @@ if (phase == 0) {
         // --- Text with alpha ---
         draw_set_color(c_black);
         draw_set_font(fnt_main);
+        //c+=0.005;
+        c1 = make_color_rgb(irandom_range(0,255), irandom_range(0,255), irandom_range(0,255));
+        draw_text_colour(cx, cy, "acidnt3.1# # # # #prodicktions",c1,c1,c1,c1,alpha_val);
+    }
+    
+    if !show_part3
+    {
+        draw_set_color(c_red);
+        draw_set_font(fnt_main);
         c+=0.005;
-        draw_text_colour(cx, cy, "AcidNT3.1# # # # #Productions",c1,c1,c1,c1,alpha_val);
+        draw_text(cx, cy, "VOLUME WARNING# # # # #EPILEPSY WARNING");
     }
 }
 else if (phase == 1) {

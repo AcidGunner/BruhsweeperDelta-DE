@@ -49,6 +49,30 @@ if instance_exists(obj_10)
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>audio_stop_all();
+instance_create(0,0,obj_persona);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="3">
       <action>
         <libid>1</libid>
@@ -69,7 +93,7 @@ if instance_exists(obj_10)
             <string>audio_stop_all();
 if global.stage!=0
 {
-    ini_open("msplus-ps3-save.ini");
+    ini_open("bsdde-save.ini");
     ini_write_string("save","current_time","");
     ini_close();
     if instance_exists(obj_chap1_data) instance_destroy(obj_chap1_data);
@@ -163,7 +187,7 @@ alarm[3]=5*global.FSP;
             <kind>1</kind>
             <string>go=1;
 audio_play_sound(sfx_9lose,0,false);
-alarm[1]=1*global.FSP;
+alarm[4]=1*global.FSP;
 </string>
           </argument>
         </arguments>

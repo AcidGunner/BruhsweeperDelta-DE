@@ -162,6 +162,8 @@ alarm[5]=0.836*global.FSP;
           <argument>
             <kind>1</kind>
             <string>if data_count&gt;ds_list_size(time)-1 exit;
+if !data_count exit;
+
 var tmp=instance_create(0,0,obj_end_text1);
 var tmp_data=ds_list_find_value(time,data_count);
 tmp.count=data_count;
@@ -300,7 +302,9 @@ draw_set_halign(fa_middle);
 draw_set_font(fnt_main);
 draw_text_outline(160,y1-30,global.str[0],c_red,c_white,1);
 draw_set_font(fnt_smol);
-draw_text_outline(275,y1-10,"PS3 "+global.str[1],c_red,c_white,1);
+draw_set_halign(fa_right);
+draw_text_outline(310,y1-10,global.str[1],c_red,c_white,1);
+draw_set_halign(fa_middle);
 draw_text_outline(160,y2+30,global.str[68],c_red,c_white,1);
 
 if thanks=1

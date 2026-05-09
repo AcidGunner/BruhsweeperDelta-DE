@@ -55,7 +55,7 @@ circle_grid = ds_grid_create(grid_w,grid_h);
 ds_grid_clear(circle_grid,0);
 
 zoom = 1;
-zoom_min = 0.55;
+zoom_min = 0.3;
 zoom_max = 1;
 zoom_speed = 0.05;
 draw_size = 0;
@@ -254,6 +254,9 @@ if global.stage==9
     spiral_setup();
 }
 
+if global.stage!=0 shape_setup(global.stage);
+
+/*
 if global.episode==2
 {
     if global.stage==10
@@ -268,8 +271,8 @@ if global.episode==2
         
         set_circle_grid(4);
     }
-    else shape_setup(global.stage);
 }
+*/
 
 if global.stage==11
 {

@@ -21,7 +21,7 @@ global.show_10_message=1;
 lives=3;
 
 //only then save!
-ini_open("msplus-ps3-save.ini");
+ini_open("bsdde-save.ini");
 ini_write_string("save","current_time","");
 ini_close();
 save_game();

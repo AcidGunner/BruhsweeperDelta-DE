@@ -142,7 +142,7 @@ else
 global.stage=1;
 global.foughtcirno=0;
 global.foughtutsuho=0;
-ini_open("msplus-ps3-save.ini");
+ini_open("bsdde-save.ini");
 ini_write_string("save","current_time","");
 ini_close();
 if instance_exists(obj_chap1_data) instance_destroy(obj_chap1_data);

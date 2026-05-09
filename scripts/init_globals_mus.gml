@@ -51,8 +51,8 @@ global._en[20]= 2420316;
 global._st[21]= 1891054;
 global._en[21]= 3098038;
 
-global._st[99]= 460984;
-global._en[99]= 6700344;
+global._st[99]= 1093989;
+global._en[99]= 5497117;
 
 global._music[0]=mus_title;
 global._music[1]=mus_stage1;

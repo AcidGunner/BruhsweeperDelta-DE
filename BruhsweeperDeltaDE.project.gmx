@@ -15,6 +15,7 @@
         </sounds>
         <sounds name="other">
           <sound>sound\mus_disligmer</sound>
+          <sound>sound\mus_persona</sound>
         </sounds>
       </sounds>
       <sounds name="menu">
@@ -178,6 +179,7 @@
         <sound>sound\sound111</sound>
         <sound>sound\sfx_weird</sound>
         <sound>sound\sfx_error</sound>
+        <sound>sound\sound114</sound>
       </sounds>
       <sounds name="dabios">
         <sound>sound\boot1</sound>
@@ -325,6 +327,7 @@
         <sprite>sprites\spr_message</sprite>
       </sprites>
       <sprite>sprites\spr_logo</sprite>
+      <sprite>sprites\spr_logo2</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -359,34 +362,8 @@
           <script>scripts\badapple_3.gml</script>
           <script>scripts\badapple_4.gml</script>
           <script>scripts\badapple_5.gml</script>
-          <script>scripts\badapple_6.gml</script>
-          <script>scripts\badapple_7.gml</script>
-          <script>scripts\badapple_8.gml</script>
-          <script>scripts\badapple_9.gml</script>
-          <script>scripts\badapple_10.gml</script>
-          <script>scripts\badapple_11.gml</script>
-          <script>scripts\badapple_12.gml</script>
-          <script>scripts\badapple_13.gml</script>
-          <script>scripts\badapple_14.gml</script>
-          <script>scripts\badapple_15.gml</script>
-          <script>scripts\badapple_16.gml</script>
-          <script>scripts\badapple_17.gml</script>
-          <script>scripts\badapple_18.gml</script>
-          <script>scripts\badapple_19.gml</script>
-          <script>scripts\badapple_20.gml</script>
-          <script>scripts\badapple_21.gml</script>
-          <script>scripts\badapple_22.gml</script>
-          <script>scripts\badapple_23.gml</script>
-          <script>scripts\badapple_24.gml</script>
-          <script>scripts\badapple_25.gml</script>
-          <script>scripts\badapple_26.gml</script>
-          <script>scripts\badapple_27.gml</script>
-          <script>scripts\badapple_28.gml</script>
-          <script>scripts\badapple_29.gml</script>
-          <script>scripts\badapple_30.gml</script>
-          <script>scripts\badapple_31.gml</script>
-          <script>scripts\badapple_32.gml</script>
         </scripts>
+        <script>scripts\bad_apple_initialize.gml</script>
         <script>scripts\secret_script_p1.gml</script>
         <script>scripts\secret_script_p2.gml</script>
         <script>scripts\secret_script_2_p1.gml</script>
@@ -398,7 +375,6 @@
       <scripts name="debug">
         <script>scripts\audio_loop_sound.gml</script>
         <script>scripts\gamepad_button_check_pressed_any.gml</script>
-        <script>scripts\bad_apple_initialize.gml</script>
         <script>scripts\message_set.gml</script>
         <script>scripts\detect_console.gml</script>
         <script>scripts\check_debug.gml</script>
@@ -407,9 +383,6 @@
       <scripts name="draw">
         <script>scripts\draw_text_outline.gml</script>
         <script>scripts\draw_grid_map.gml</script>
-        <script>scripts\draw_triangle_1.gml</script>
-        <script>scripts\draw_triangle_2.gml</script>
-        <script>scripts\draw_triangle_3.gml</script>
       </scripts>
       <scripts name="other">
         <script>scripts\you_won_sfx.gml</script>
@@ -484,6 +457,7 @@
         <object>objects\obj_audio_pitcher</object>
         <object>objects\obj_fade</object>
         <object>objects\obj_fade_mid</object>
+        <object>objects\obj_persona</object>
       </objects>
     </objects>
     <objects name="Menu">
@@ -525,6 +499,7 @@
       <object>objects\obj_audio_loop_sound</object>
       <object>objects\obj_logomain</object>
       <object>objects\obj_message</object>
+      <object>objects\obj_disligma</object>
     </objects>
     <objects name="Versus">
       <objects name="player1">
@@ -546,6 +521,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_logo</room>
+    <room>rooms\rm_disligma</room>
     <room>rooms\rm_title</room>
     <room>rooms\rm_menu</room>
     <room>rooms\rm_map</room>

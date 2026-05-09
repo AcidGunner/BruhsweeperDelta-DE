@@ -75,7 +75,7 @@ color=c_white;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ini_open("msplus-ps3-save.ini");
+            <string>ini_open("bsdde-save.ini");
 ini_write_string("save","current_time","");
 ini_close();
 if instance_exists(obj_chap1_data) instance_destroy(obj_chap1_data);

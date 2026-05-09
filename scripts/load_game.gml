@@ -1,5 +1,5 @@
 ///load_game();
-ini_open("msplus-ps3-save.ini");
+ini_open("bsdde-save.ini");
 global.config=ini_read_real("save","config",0);
 global.stage=ini_read_real("save","stage",1);
 global.hat_type=ini_read_real("save","hat",1);
